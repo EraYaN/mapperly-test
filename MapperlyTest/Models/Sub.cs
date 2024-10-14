@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 namespace MapperlyTest.Models;
 internal class Sub
 {
-    internal string Name { get; }
-    internal int Number { get; }
+    internal string Name { get; set; }
+    internal int Number { get; set; }
 }
