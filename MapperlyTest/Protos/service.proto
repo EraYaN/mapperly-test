@@ -1,0 +1,26 @@
+﻿syntax = "proto3";
+package mapperlytest.protos;
+
+
+option csharp_namespace = "MapperlyTest.Protos";
+
+message SubMessage{
+	string name = 1;
+	int32 number = 2;
+}
+
+message InputModel {
+  repeated string names = 1;
+  repeated SubMessage subMessages = 2;
+  repeated int32 numbers = 3;
+}
+
+message OutputModel {
+  InputModel input = 1;
+  repeated bool out_values = 2;
+}
+
+//Service for Invoices
+service TestService {
+  rpc Endpoint(InputModel) returns (OutputModel); //Gets the path of an invoice
+}

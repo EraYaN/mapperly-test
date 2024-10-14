@@ -1,0 +1,5 @@
+**/*.Development.json
+.vs/
+.ci/
+Calcasa.ReportGenerator*/**
+dist/*.xml

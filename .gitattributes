@@ -1,0 +1,47 @@
+# Auto detect text files and perform LF normalization
+* text=auto eol=lf
+
+# Built-in diff patterns for text files
+*.cs        text diff=csharp
+*.cshtml    text diff=html
+*.csx       text diff=csharp
+*.sln       text
+*.csproj    text
+*.php       text diff=php
+*.sh        text diff=bash
+*.cpp       text diff=cpp
+*.hpp       text diff=cpp
+*.c         text diff=cpp
+*.h         text diff=cpp
+*.bib       text diff=bibtex
+*.css       text diff=css
+*.scss      text diff=css
+*.htm       text diff=html
+*.html      text diff=html
+*.java      text diff=java
+*.md        text diff=markdown
+*.py        text diff=python
+*.rs        text diff=rust
+*.tex       text diff=tex
+*.ts        text
+*.json      text
+*.ps1       text
+
+# Standard to msysgit
+*.doc	diff=astextplain
+*.DOC	diff=astextplain
+*.docx  diff=astextplain
+*.DOCX  diff=astextplain
+*.dot   diff=astextplain
+*.DOT   diff=astextplain
+*.pdf   diff=astextplain
+*.PDF	diff=astextplain
+*.rtf	diff=astextplain
+*.RTF	diff=astextplain
+
+# Fonts
+*.eot binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.otf binary
